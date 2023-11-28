@@ -1,5 +1,13 @@
 controllers:
-    resource:
+    resource: 
         path: ../src/Controller/
         namespace: App\Controller
     type: attribute
+
+## Définition d'une route
+# nom_de_la_route:
+adresse_html : 
+    # URL qui accède a la fonction adresse puisque je retourne une adresse
+    path: /adresse
+    # the controller value has the format 'controller_class::method_name' Je vais lier ma route à un controleur
+    controller: App\Controller\ConferenceController::adresseHTML
